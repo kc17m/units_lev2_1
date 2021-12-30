@@ -1,0 +1,58 @@
+/* Aufgabenstellung
+
+EM vs REM
+
+“Em” repräsentiert die vom Browser berechnete Schriftgröße des Elements
+Wird die Schriftgröße selbst (font-size) in em festgelegt, bezieht sich die Einheit auf die Schriftgröße des Elternelements
+Ein “rem” (root-em) entspricht der Schriftgröße, die für das Wurzelelement (in HTML ist das das html-Element) festgelegt wurde */
+li {
+    font-size: .8em;
+    line-height: 1.5em;
+    /* list-style: none; */
+}
+
+ul {
+    padding-inline-start: 1.2em;
+    list-style: none;
+}
+
+section {
+    font-size: 1.2rem;
+    border: 0.2rem solid;
+}
+
+ul li ul li ul li:before { 
+    content: " 🐶";
+}
+
+ul li ul li:nth-of-type(2) ul li:before { 
+    content: " 🐱";
+}
+
+ul li:nth-of-type(2) ul li ul li::before {
+    content: " 🐥";
+}
+
+ul li:nth-of-type(3) ul li ul li::before {
+    content: " 🐍";
+    /* reptiles */
+}
+
+ul li:nth-of-type(3) ul li:nth-of-type(2) ul li::before  { 
+    content: " 🦎";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
