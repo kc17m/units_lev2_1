@@ -21,11 +21,11 @@ section {
     border: 0.2rem solid;
 }
 
-ul li ul li ul li:before { 
+ul li ul li ul li::before { 
     content: " 🐶";
 }
 
-ul li ul li:nth-of-type(2) ul li:before { 
+ul li ul li:nth-of-type(2) ul li::before { 
     content: " 🐱";
 }
 
